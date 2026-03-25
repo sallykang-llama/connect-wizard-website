@@ -1,0 +1,59 @@
+/* ── Cursor blink ───────────────────────────────────────── */
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+/* ── Scroll reveal ──────────────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity var(--fade-duration) ease, transform var(--fade-duration) ease;
+}
+
+.reveal--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delays for cards */
+.card-grid .card:nth-child(1) { transition-delay: 0ms; }
+.card-grid .card:nth-child(2) { transition-delay: 80ms; }
+.card-grid .card:nth-child(3) { transition-delay: 160ms; }
+.card-grid .card:nth-child(4) { transition-delay: 240ms; }
+.card-grid .card:nth-child(5) { transition-delay: 320ms; }
+.card-grid .card:nth-child(6) { transition-delay: 400ms; }
+.card-grid .card:nth-child(7) { transition-delay: 480ms; }
+.card-grid .card:nth-child(8) { transition-delay: 560ms; }
+
+/* ── Sparkle ────────────────────────────────────────────── */
+@keyframes sparkle {
+  0%   { opacity: 0; transform: scale(0); }
+  50%  { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(0); }
+}
+
+/* ── Sparkle canvas ─────────────────────────────────────── */
+.sparkle-canvas {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ── Reduced motion ─────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .terminal__cursor {
+    animation: none;
+    opacity: 1;
+  }
+
+  .sparkle-canvas {
+    display: none;
+  }
+}

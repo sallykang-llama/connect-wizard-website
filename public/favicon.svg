@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Pixel wizard hat favicon -->
+  <rect width="32" height="32" fill="#050508"/>
+  <!-- Hat brim -->
+  <rect x="4" y="24" width="24" height="4" fill="#9b6dff"/>
+  <!-- Hat body -->
+  <rect x="8" y="16" width="16" height="8" fill="#9b6dff"/>
+  <!-- Hat top -->
+  <rect x="12" y="8" width="8" height="8" fill="#9b6dff"/>
+  <!-- Hat tip -->
+  <rect x="16" y="4" width="4" height="4" fill="#9b6dff"/>
+  <!-- Star on hat -->
+  <rect x="14" y="14" width="4" height="4" fill="#f5c542"/>
+  <!-- Hat shine -->
+  <rect x="10" y="18" width="2" height="2" fill="#b48eff"/>
+</svg>

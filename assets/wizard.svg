@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Pixel wizard character for nav logo -->
+  <!-- Hat tip -->
+  <rect x="14" y="2" width="4" height="2" fill="#9b6dff"/>
+  <!-- Hat top -->
+  <rect x="12" y="4" width="8" height="4" fill="#9b6dff"/>
+  <!-- Star -->
+  <rect x="14" y="5" width="4" height="2" fill="#f5c542"/>
+  <!-- Hat mid -->
+  <rect x="10" y="8" width="12" height="4" fill="#9b6dff"/>
+  <!-- Hat brim -->
+  <rect x="6" y="12" width="20" height="2" fill="#9b6dff"/>
+  <!-- Face -->
+  <rect x="10" y="14" width="12" height="6" fill="#e8e8f0"/>
+  <!-- Eyes -->
+  <rect x="12" y="16" width="2" height="2" fill="#050508"/>
+  <rect x="18" y="16" width="2" height="2" fill="#050508"/>
+  <!-- Body -->
+  <rect x="10" y="20" width="12" height="6" fill="#66ffcc"/>
+  <!-- Wand -->
+  <rect x="24" y="14" width="2" height="10" fill="#f5c542"/>
+  <!-- Wand tip sparkle -->
+  <rect x="23" y="12" width="4" height="2" fill="#ffdd66"/>
+  <rect x="25" y="11" width="2" height="4" fill="#ffdd66"/>
+  <!-- Feet -->
+  <rect x="10" y="26" width="4" height="2" fill="#9b6dff"/>
+  <rect x="18" y="26" width="4" height="2" fill="#9b6dff"/>
+</svg>

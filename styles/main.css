@@ -1,0 +1,149 @@
+/* ── Design Tokens ──────────────────────────────────────── */
+:root {
+  /* Backgrounds */
+  --bg-deepest:    #050508;
+  --bg-primary:    #0a0a0f;
+  --bg-elevated:   #111118;
+  --bg-surface:    #1a1a24;
+  --bg-terminal:   #0c0c14;
+
+  /* Text */
+  --text-primary:  #e8e8f0;
+  --text-secondary:#8888a0;
+  --text-dim:      #555566;
+
+  /* Terminal palette */
+  --terminal-green:   #00ff88;
+  --terminal-cyan:    #66ffcc;
+  --terminal-blue:    #88bbff;
+  --terminal-yellow:  #ffdd66;
+  --terminal-red:     #ff6666;
+  --terminal-magenta: #cc88ff;
+
+  /* Pixel / Stardew accents */
+  --pixel-gold:    #f5c542;
+  --pixel-purple:  #9b6dff;
+  --pixel-warm:    #ff9966;
+  --pixel-green:   #66cc77;
+
+  /* Typography */
+  --font-mono:  'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+  --font-pixel: 'Silkscreen', cursive;
+  --font-body:  var(--font-mono);
+
+  /* Spacing (4px base) */
+  --sp-1: 4px;  --sp-2: 8px;  --sp-3: 12px; --sp-4: 16px;
+  --sp-5: 20px; --sp-6: 24px; --sp-8: 32px; --sp-10: 40px;
+  --sp-12: 48px; --sp-16: 64px; --sp-20: 80px; --sp-24: 96px;
+
+  /* Layout */
+  --max-width:     1200px;
+  --nav-height:    56px;
+  --border-color:  #222233;
+  --border-radius: 6px;
+
+  /* Animation */
+  --typewriter-speed: 35ms;
+  --fade-duration:    600ms;
+  --sparkle-duration: 1200ms;
+}
+
+/* ── Reset ──────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: var(--bg-deepest);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ── Base Typography ────────────────────────────────────── */
+h1, h2, h3 {
+  font-family: var(--font-pixel);
+  letter-spacing: 0.05em;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: clamp(24px, 4vw, 44px);
+  color: var(--text-primary);
+}
+
+h2 {
+  font-size: clamp(18px, 3vw, 28px);
+  color: var(--terminal-cyan);
+}
+
+h3 {
+  font-size: clamp(14px, 2vw, 18px);
+  color: var(--text-primary);
+}
+
+p {
+  color: var(--text-secondary);
+  max-width: 640px;
+}
+
+a {
+  color: var(--terminal-blue);
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 3px;
+  transition: color 200ms;
+}
+
+a:hover {
+  color: var(--terminal-cyan);
+}
+
+code, pre {
+  font-family: var(--font-mono);
+}
+
+code {
+  background: var(--bg-elevated);
+  color: var(--terminal-green);
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 13px;
+}
+
+pre {
+  overflow-x: auto;
+}
+
+ul, ol {
+  padding-left: var(--sp-6);
+}
+
+li {
+  color: var(--text-secondary);
+  margin-bottom: var(--sp-2);
+}
+
+li strong {
+  color: var(--text-primary);
+}
+
+::selection {
+  background: var(--pixel-purple);
+  color: #fff;
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+}
