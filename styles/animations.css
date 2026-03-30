@@ -25,6 +25,15 @@
 .card-grid .card:nth-child(7) { transition-delay: 480ms; }
 .card-grid .card:nth-child(8) { transition-delay: 560ms; }
 
+/* Stagger delays for agent chips */
+.agent-grid .agent-chip:nth-child(1) { transition-delay: 0ms; }
+.agent-grid .agent-chip:nth-child(2) { transition-delay: 80ms; }
+.agent-grid .agent-chip:nth-child(3) { transition-delay: 160ms; }
+.agent-grid .agent-chip:nth-child(4) { transition-delay: 240ms; }
+.agent-grid .agent-chip:nth-child(5) { transition-delay: 320ms; }
+.agent-grid .agent-chip:nth-child(6) { transition-delay: 400ms; }
+.agent-grid .agent-chip:nth-child(7) { transition-delay: 480ms; }
+
 /* ── Sparkle ────────────────────────────────────────────── */
 @keyframes sparkle {
   0%   { opacity: 0; transform: scale(0); }

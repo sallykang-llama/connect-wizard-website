@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Connect Wizard — Claude Code Plugin for Stripe Connect</title>
-  <meta name="description" content="A Claude Code plugin that adds Stripe Connect to your app. 8 skills, 6 agents, zero Stripe expertise required.">
+  <meta name="description" content="A Claude Code plugin that adds Stripe Connect to your app. 8 skills, 7 agents, zero Stripe expertise required.">
   <meta name="theme-color" content="#0a0a0f">
   <meta property="og:title" content="Connect Wizard — Claude Code Plugin for Stripe Connect">
-  <meta property="og:description" content="Add Stripe Connect to your app from the terminal. 8 skills, 6 agents, zero Stripe expertise required.">
+  <meta property="og:description" content="Add Stripe Connect to your app from the terminal. 8 skills, 7 agents, zero Stripe expertise required.">
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,8 +62,8 @@
       </div>
       <div class="hero__meta">
         <span class="tag">8 skills</span>
-        <span class="tag">6 agents</span>
-        <span class="tag">13 reference docs</span>
+        <span class="tag">7 agents</span>
+        <span class="tag">14 reference docs</span>
       </div>
     </div>
   </section>
@@ -71,8 +71,16 @@
   <!-- ── Features ───────────────────────────────────────── -->
   <section id="features" class="section section--features">
     <div class="section__inner">
-      <h2 class="section__heading reveal">/commands</h2>
-      <p class="section__sub reveal">Eight slash commands. Each checks its own prerequisites. Run in any order.</p>
+      <h2 class="section__heading reveal">What's inside</h2>
+      <p class="section__sub reveal">
+        8 skills that auto-trigger from natural language, 7 specialized agents, and 14 bundled reference docs.
+        No slash commands needed &mdash; just describe what you want.
+      </p>
+
+      <h3 class="subsection__heading reveal">
+        <span class="highlight--cyan">Skills</span>
+        <span class="subsection__note">auto-trigger when you describe intent</span>
+      </h3>
       <div class="card-grid">
         <article class="card reveal">
           <div class="card__header">
@@ -146,35 +154,120 @@
           <span class="card__tag">reference</span>
         </article>
       </div>
+
+      <h3 class="subsection__heading reveal">
+        <span class="highlight--purple">Agents</span>
+        <span class="subsection__note">spawned by skills &mdash; never called directly</span>
+      </h3>
+      <div class="agent-grid">
+        <div class="agent-chip reveal">
+          <span class="agent-chip__icon">&#x1F50D;</span>
+          <div>
+            <strong class="agent-chip__name">prerequisite-checker</strong>
+            <span class="agent-chip__desc">Validates CLI, authentication, and Connect enablement</span>
+          </div>
+        </div>
+        <div class="agent-chip reveal">
+          <span class="agent-chip__icon">&#x1F3E2;</span>
+          <div>
+            <strong class="agent-chip__name">company-researcher</strong>
+            <span class="agent-chip__desc">Researches business model to recommend integration shape</span>
+          </div>
+        </div>
+        <div class="agent-chip reveal">
+          <span class="agent-chip__icon">&#x1F4E6;</span>
+          <div>
+            <strong class="agent-chip__name">stack-detector</strong>
+            <span class="agent-chip__desc">Scans project files to detect framework, language, and tooling</span>
+          </div>
+        </div>
+        <div class="agent-chip reveal">
+          <span class="agent-chip__icon">&#x2699;</span>
+          <div>
+            <strong class="agent-chip__name">backend-builder</strong>
+            <span class="agent-chip__desc">Generates server routes, API endpoints, and payment logic</span>
+          </div>
+        </div>
+        <div class="agent-chip reveal">
+          <span class="agent-chip__icon">&#x1F3A8;</span>
+          <div>
+            <strong class="agent-chip__name">frontend-builder</strong>
+            <span class="agent-chip__desc">Generates UI components, Stripe Elements, and onboarding flows</span>
+          </div>
+        </div>
+        <div class="agent-chip reveal">
+          <span class="agent-chip__icon">&#x1F4E1;</span>
+          <div>
+            <strong class="agent-chip__name">webhook-handler</strong>
+            <span class="agent-chip__desc">Wires up event listeners for account and payment lifecycle</span>
+          </div>
+        </div>
+        <div class="agent-chip reveal">
+          <span class="agent-chip__icon">&#x2705;</span>
+          <div>
+            <strong class="agent-chip__name">test-runner</strong>
+            <span class="agent-chip__desc">Executes end-to-end test payments and verifies fee splits</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="knowledge-bar reveal">
+        <span class="knowledge-bar__icon">&#x1F4DA;</span>
+        <span class="knowledge-bar__text">
+          <strong>14 reference docs</strong> bundled as domain knowledge &mdash;
+          Connect concepts, charge patterns, onboarding flows, webhook events, and more.
+          Skills consult these automatically so you don't have to read the Stripe docs.
+        </span>
+      </div>
     </div>
   </section>
 
   <!-- ── How It Works ───────────────────────────────────── -->
   <section id="how-it-works" class="section section--flow">
     <div class="section__inner">
-      <h2 class="section__heading reveal">How it works</h2>
-      <p class="section__sub reveal">Three steps from zero to a working Stripe Connect integration.</p>
-      <div class="flow reveal">
-        <div class="flow__step">
-          <div class="flow__number">1</div>
-          <h3 class="flow__title">/discover</h3>
-          <p>Describe your business. The wizard recommends account type, charge pattern, and fee structure.</p>
-          <code class="flow__example">"I'm building a marketplace where mechanics list services"</code>
-        </div>
-        <div class="flow__connector" aria-hidden="true">---&gt;</div>
-        <div class="flow__step">
-          <div class="flow__number">2</div>
-          <h3 class="flow__title">/integrate</h3>
-          <p>Detects your stack, generates Express backend + React frontend + webhook handlers.</p>
-          <code class="flow__example">server/ routes, src/ components, .env keys</code>
-        </div>
-        <div class="flow__connector" aria-hidden="true">---&gt;</div>
-        <div class="flow__step">
-          <div class="flow__number">3</div>
-          <h3 class="flow__title">/test</h3>
-          <p>Runs test payments with test cards, verifies fee splits, checks webhook delivery. Go-live checklist.</p>
-          <code class="flow__example">stripe trigger payment_intent.succeeded</code>
-        </div>
+      <h2 class="section__heading reveal">Jump in anywhere</h2>
+      <p class="section__sub reveal">Skills work independently. Pick the job that matches where you are.</p>
+      <div class="jtbd-grid reveal">
+        <article class="jtbd-card">
+          <h3 class="jtbd-card__question">Starting from scratch?</h3>
+          <p class="jtbd-card__desc">
+            Describe your business in plain English. The wizard recommends account type,
+            charge pattern, and fee structure &mdash; then generates all the code.
+          </p>
+          <div class="jtbd-card__skills">
+            <code>/discover</code> <span class="jtbd-card__plus">+</span> <code>/integrate</code>
+          </div>
+        </article>
+        <article class="jtbd-card">
+          <h3 class="jtbd-card__question">Already have an app?</h3>
+          <p class="jtbd-card__desc">
+            Point the wizard at your codebase. It detects your stack and generates
+            Connect code that fits your existing architecture.
+          </p>
+          <div class="jtbd-card__skills">
+            <code>/integrate</code> <span class="jtbd-card__dim">detects your stack</span>
+          </div>
+        </article>
+        <article class="jtbd-card">
+          <h3 class="jtbd-card__question">Need to tweak?</h3>
+          <p class="jtbd-card__desc">
+            Change platform fees, switch charge patterns, adjust payout timing,
+            or modify account capabilities &mdash; with before/after diffs.
+          </p>
+          <div class="jtbd-card__skills">
+            <code>/configure</code>
+          </div>
+        </article>
+        <article class="jtbd-card">
+          <h3 class="jtbd-card__question">Ready to ship?</h3>
+          <p class="jtbd-card__desc">
+            Run end-to-end test payments with test cards, verify fee splits,
+            check webhook delivery, and get a go-live checklist.
+          </p>
+          <div class="jtbd-card__skills">
+            <code>/test</code> <span class="jtbd-card__plus">+</span> <span class="jtbd-card__dim">go-live checklist</span>
+          </div>
+        </article>
       </div>
     </div>
   </section>
@@ -197,6 +290,7 @@
           <button class="terminal__tab terminal__tab--active" data-scenario="discover">/discover</button>
           <button class="terminal__tab" data-scenario="integrate">/integrate</button>
           <button class="terminal__tab" data-scenario="status">/status</button>
+          <button class="terminal__tab" data-scenario="configure">/configure</button>
         </div>
         <div class="terminal__body" role="log" aria-live="polite">
           <div class="terminal__output" id="terminal-output"></div>
