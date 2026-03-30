@@ -4,32 +4,14 @@ A showcase website for Connect Wizard featuring an interactive terminal demo.
 
 ## Installing Connect Wizard
 
-### Option 1: Install from GitHub (coming soon)
+Install from the **Stripe internal plugin marketplace**:
 
-```bash
-claude plugin install github:stripe-sandbox/connect-wizard
-```
+1. Open Claude Code
+2. Run `/plugin`
+3. Find the **Stripe internal marketplace** (update the marketplace if you don't see it)
+4. Search for **connect-wizard** and install it
 
-> Plugin marketplace support is not yet available in Claude Code. Once it launches, this will be the recommended install method.
-
-### Option 2: Install from a local clone (recommended)
-
-```bash
-git clone https://github.com/stripe-sandbox/connect-wizard.git
-claude plugin install ./connect-wizard
-```
-
-### Option 3: Copy into your project
-
-If you just want the skills available in a single project, copy the plugin files into your project's `.claude/` directory:
-
-```bash
-git clone https://github.com/stripe-sandbox/connect-wizard.git /tmp/connect-wizard
-cp -r /tmp/connect-wizard/.claude/skills/ your-project/.claude/skills/
-cp -r /tmp/connect-wizard/.claude/agents/ your-project/.claude/agents/
-```
-
-After installing, open Claude Code and run `/connect-help` to verify the plugin is loaded.
+After installing, run `/connect-help` to verify the plugin is loaded.
 
 ## Getting Started
 

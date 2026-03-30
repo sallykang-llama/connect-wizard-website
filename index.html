@@ -247,42 +247,13 @@
           <p class="install-note">Everything runs in Stripe's test mode, so no real money is involved.</p>
         </div>
         <div class="install-step reveal">
-          <h3>Option 1: Install from GitHub <span class="tag">coming soon</span></h3>
-          <div class="code-block">
-            <div class="code-block__header">
-              <span>terminal</span>
-              <button class="copy-btn" data-copy="claude plugin install github:stripe-sandbox/connect-wizard">Copy</button>
-            </div>
-            <pre><code>$ claude plugin install github:stripe-sandbox/connect-wizard</code></pre>
-          </div>
-          <p class="install-note">Plugin marketplace support is not yet available in Claude Code. Once it launches, this will be the recommended install method.</p>
-        </div>
-        <div class="install-step reveal">
-          <h3>Option 2: Install from a local clone <span class="tag">recommended</span></h3>
-          <div class="code-block">
-            <div class="code-block__header">
-              <span>terminal</span>
-              <button class="copy-btn" data-copy="git clone https://github.com/stripe-sandbox/connect-wizard.git
-claude plugin install ./connect-wizard">Copy</button>
-            </div>
-            <pre><code>$ git clone https://github.com/stripe-sandbox/connect-wizard.git
-$ claude plugin install ./connect-wizard</code></pre>
-          </div>
-        </div>
-        <div class="install-step reveal">
-          <h3>Option 3: Copy into your project</h3>
-          <p class="install-note">If you just want the skills available in a single project, copy the plugin files into your project's <code>.claude/</code> directory:</p>
-          <div class="code-block">
-            <div class="code-block__header">
-              <span>terminal</span>
-              <button class="copy-btn" data-copy="git clone https://github.com/stripe-sandbox/connect-wizard.git /tmp/connect-wizard
-cp -r /tmp/connect-wizard/.claude/skills/ your-project/.claude/skills/
-cp -r /tmp/connect-wizard/.claude/agents/ your-project/.claude/agents/">Copy</button>
-            </div>
-            <pre><code>$ git clone https://github.com/stripe-sandbox/connect-wizard.git /tmp/connect-wizard
-$ cp -r /tmp/connect-wizard/.claude/skills/ your-project/.claude/skills/
-$ cp -r /tmp/connect-wizard/.claude/agents/ your-project/.claude/agents/</code></pre>
-          </div>
+          <h3>Install from the Stripe internal marketplace <span class="tag">recommended</span></h3>
+          <ol class="install-list">
+            <li>Open Claude Code</li>
+            <li>Run <code>/plugin</code></li>
+            <li>Find the <strong>Stripe internal marketplace</strong> (update the marketplace if you don't see it)</li>
+            <li>Search for <strong>connect-wizard</strong> and install it</li>
+          </ol>
         </div>
         <div class="install-step reveal">
           <h3>Verify it works</h3>
