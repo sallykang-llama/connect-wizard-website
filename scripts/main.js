@@ -38,7 +38,7 @@ function initKeyboardNav() {
     const key = e.key.toLowerCase();
 
     if (key === 'g') {
-      window.open('https://github.com/anthropics/claude-code', '_blank');
+      window.open('https://git.corp.stripe.com/stripe-sandbox/connect-wizard', '_blank');
       return;
     }
 
